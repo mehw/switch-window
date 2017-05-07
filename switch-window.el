@@ -208,9 +208,9 @@
 
 (defcustom switch-window-shortcut-style 'quail
   "Use either keyboard layout or alphabet shortcut style"
-  :type '(choice (const :tag "Alphabet" 'alphabet)
-                 (const :tag "Keyboard Layout" 'quail)
-                 (const :tag "Qwerty Homekeys Layout" 'qwerty))
+  :type '(choice (const :tag "Alphabet" alphabet)
+                 (const :tag "Keyboard Layout" quail)
+                 (const :tag "Qwerty Homekeys Layout" qwerty))
   :group 'switch-window)
 
 (defcustom switch-window-qwerty-shortcuts
@@ -221,9 +221,9 @@
 
 (defcustom switch-window-shortcut-appearance 'text
   "Switch-window shortcut's appearance."
-  :type '(choice (const :tag "Show shortcut with text" 'text)
-                 (const :tag "Show shortcut with Ascii art." 'asciiart)
-                 (const :tag "Show shortcut with image." 'image))
+  :type '(choice (const :tag "Show shortcut with text" text)
+                 (const :tag "Show shortcut with Ascii art." asciiart)
+                 (const :tag "Show shortcut with image." image))
   :group 'switch-window)
 
 (defcustom switch-window-image-directory (locate-user-emacs-file "switch-window/image")
@@ -244,8 +244,8 @@ a window's label string, three arguments are required:
 
 (defcustom switch-window-input-style 'default
   "Use `read-event' or `read-from-minibuffer' to get user's input."
-  :type '(choice (const :tag "Get input by read-event" 'default)
-                 (const :tag "Get input from minibuffer" 'minibuffer))
+  :type '(choice (const :tag "Get input by read-event" default)
+                 (const :tag "Get input from minibuffer" minibuffer))
   :group 'switch-window)
 
 (defcustom switch-window-minibuffer-shortcut nil
